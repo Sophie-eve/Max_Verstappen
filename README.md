@@ -1,7 +1,7 @@
 
 </div>
 
-**Max Verstappen #1 — The Fan Grid** is a high-performance web experience designed for motorsport enthusiasts, racing purists, and the global Max Army. Combining bleeding-edge WebGL graphics, tactile micro-interactions, live telemetry indicators, and authentic Formula 1 aesthetics, the application delivers a cinematic immersion into the career of the most dominant driver of modern Grand Prix racing.
+**Max Verstappen, The Fan Grid** is a high-performance web experience designed for motorsport enthusiasts, racing purists, and the global Max Army. Combining bleeding-edge WebGL graphics, tactile micro-interactions, live telemetry indicators, and authentic Formula 1 aesthetics, the application delivers a cinematic immersion into the career of the most dominant driver of modern Grand Prix racing.
 
 
 ---
