@@ -1,26 +1,172 @@
 @import "tailwindcss";
 
+@theme {
+  --color-racing-bg: #0A0E1A;
+  --color-racing-surface: #121829;
+  --color-racing-card: #151D33;
+  --color-racing-card-hover: #1C2744;
+  --color-rb-red: #DB0A40;
+  --color-rb-red-dark: #A5072F;
+  --color-accent-yellow: #FFC906;
+  --color-dutch-orange: #FF6A13;
+  --color-racing-text: #F5F7FA;
+  --color-racing-muted: #8F9CAE;
+  --color-racing-border: rgba(255, 255, 255, 0.08);
+
+  --font-display: var(--font-bebas), "Anton", "Bebas Neue", sans-serif;
+  --font-sans: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-dark: #0A0E1A;
+  --surface: #121829;
+  --surface-card: #151D33;
+  --red-bull-red: #DB0A40;
+  --accent-yellow: #FFC906;
+  --dutch-orange: #FF6A13;
+  --text-main: #F5F7FA;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Base Body & Reset */
+html {
+  scroll-behavior: smooth;
+  background-color: #0A0E1A;
+  color: #F5F7FA;
+  color-scheme: dark;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0A0E1A;
+  color: #F5F7FA;
+  font-family: var(--font-inter), "Inter", sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
 }
+
+/* Accessibility Focus States */
+:focus-visible {
+  outline: 2px solid #FFC906;
+  outline-offset: 3px;
+}
+
+/* Text Selection */
+::selection {
+  background-color: #DB0A40;
+  color: #FFFFFF;
+}
+
+/* Racing & Carbon Fibre Textures */
+.carbon-pattern {
+  background-color: #121829;
+  background-image: 
+    linear-gradient(45deg, rgba(0, 0, 0, 0.35) 25%, transparent 25%), 
+    linear-gradient(-45deg, rgba(0, 0, 0, 0.35) 25%, transparent 25%), 
+    linear-gradient(45deg, transparent 75%, rgba(0, 0, 0, 0.35) 75%), 
+    linear-gradient(-45deg, transparent 75%, rgba(0, 0, 0, 0.35) 75%);
+  background-size: 10px 10px;
+  background-position: 0 0, 0 5px, 5px -5px, -5px 0px;
+}
+
+.carbon-pattern-subtle {
+  background-color: #151D33;
+  background-image: 
+    linear-gradient(45deg, rgba(255, 255, 255, 0.02) 25%, transparent 25%), 
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.02) 25%, transparent 25%), 
+    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.02) 75%), 
+    linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.02) 75%);
+  background-size: 8px 8px;
+  background-position: 0 0, 0 4px, 4px -4px, -4px 0px;
+}
+
+/* Racing Stripe Livery Accents */
+.racing-stripe-accent {
+  background: linear-gradient(
+    90deg,
+    #DB0A40 0%,
+    #DB0A40 45%,
+    #FF6A13 45%,
+    #FF6A13 55%,
+    #FFC906 55%,
+    #FFC906 100%
+  );
+}
+
+.racing-diagonal-stripes {
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(219, 10, 64, 0.2),
+    rgba(219, 10, 64, 0.2) 8px,
+    transparent 8px,
+    transparent 16px
+  );
+}
+
+/* Beveled Corners inspired by F1 endplates */
+.clip-beveled {
+  clip-path: polygon(
+    12px 0, 
+    100% 0, 
+    100% calc(100% - 12px), 
+    calc(100% - 12px) 100%, 
+    0 100%, 
+    0 12px
+  );
+}
+
+.clip-beveled-sm {
+  clip-path: polygon(
+    8px 0, 
+    100% 0, 
+    100% calc(100% - 8px), 
+    calc(100% - 8px) 100%, 
+    0 100%, 
+    0 8px
+  );
+}
+
+.clip-slanted-right {
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0E1A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1C2744;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #DB0A40;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Suppress Next.js Development Indicator */
+nextjs-portal,
+[data-nextjs-dev-indicator],
+[data-nextjs-toast],
+#next-dev-indicator,
+div[data-nextjs-dev-indicator],
+div[data-nextjs-toast] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
