@@ -189,6 +189,21 @@ CREATE POLICY "Admins only read access"
 
 ---
 
+## 🌐 Deployment to Netlify
+
+The repository includes a pre-configured `netlify.toml` with the official Next.js runtime plugin (`@netlify/plugin-nextjs`):
+
+1. In the [Netlify Dashboard](https://app.netlify.com/), click **"Add new site" > "Import an existing project"**.
+2. Connect your GitHub repository `Sophie-eve/Max_Verstappen`.
+3. Netlify will automatically detect and apply the configuration from `netlify.toml`:
+   - **Build command**: `npm run build`
+   - **Publish directory**: `.next`
+   - **Base directory**: *(Leave blank / root)*
+4. (Optional) Add your Supabase environment variables in Netlify Site Configuration:
+   - `NEXT_PUBLIC_SUPABASE_URL`
+   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+   - `SUPABASE_SERVICE_ROLE_KEY`
+5. Click **"Deploy site"** (or click **"Trigger deploy" > "Clear cache and deploy site"** if your site is already connected).
 
 ---
 
