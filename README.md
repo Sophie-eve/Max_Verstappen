@@ -1,22 +1,3 @@
-# 🏎️ Max Verstappen #1 — The Official Fan Grid
-
-<div align="center">
-
-![Max Verstappen #1 Logo](public/images/logo.png)
-
-### **"Born to Race. Built to Win."**
-An immersive, production-ready digital headquarters and tribute dedicated to 4-time FIA Formula One World Champion **Max Verstappen** and the engineering dominance of **Oracle Red Bull Racing**.
-
-[![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer&logoColor=blue)](https://www.framer.com/motion/)
-[![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com/)
-[![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://www.netlify.com/)
-
-[**Explore Features**](#-key-features) • [**Tech Stack**](#-tech-stack) • [**Getting Started**](#-getting-started) • [**Netlify Deployment**](#-deployment-to-netlify) • [**Database Setup**](#-database-architecture-supabase)
-
----
 
 </div>
 
@@ -206,21 +187,6 @@ CREATE POLICY "Admins only read access"
 
 ---
 
-## 🌐 Deployment to Netlify
-
-The repository includes a pre-configured `netlify.toml` with the official Next.js runtime plugin (`@netlify/plugin-nextjs`):
-
-1. In the [Netlify Dashboard](https://app.netlify.com/), click **"Add new site" > "Import an existing project"**.
-2. Connect your GitHub repository `Sophie-eve/Max_Verstappen`.
-3. Netlify will automatically detect and apply the configuration from `netlify.toml`:
-   - **Build command**: `npm run build`
-   - **Publish directory**: `.next`
-   - **Base directory**: *(Leave blank / root)*
-4. (Optional) Add your Supabase environment variables in Netlify Site Configuration:
-   - `NEXT_PUBLIC_SUPABASE_URL`
-   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-   - `SUPABASE_SERVICE_ROLE_KEY`
-5. Click **"Deploy site"** (or click **"Trigger deploy" > "Clear cache and deploy site"** if your site is already connected).
 
 ---
 
