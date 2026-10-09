@@ -1,22 +1,3 @@
-# 🏎️ Max Verstappen #1 — The Official Fan Grid
-
-<div align="center">
-
-![Max Verstappen #1 Logo](public/images/logo.png)
-
-### **"Born to Race. Built to Win."**
-An award-winning, production-ready tribute and digital headquarters dedicated to 4-time FIA Formula One World Champion **Max Verstappen** and the engineering dominance of **Oracle Red Bull Racing**.
-
-[![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer&logoColor=blue)](https://www.framer.com/motion/)
-[![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com/)
-[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
-
-[**Live Demo**](https://verstappen-fan.vercel.app) • [**Explore Features**](#-key-features) • [**Tech Stack**](#-tech-stack) • [**Getting Started**](#-getting-started) • [**Database Setup**](#-database-architecture-supabase)
-
----
 
 </div>
 
@@ -24,7 +5,6 @@ An award-winning, production-ready tribute and digital headquarters dedicated to
 
 **Max Verstappen #1 — The Fan Grid** is a high-performance web experience designed for motorsport enthusiasts, racing purists, and the global Max Army. Combining bleeding-edge WebGL graphics, tactile micro-interactions, live telemetry indicators, and authentic Formula 1 aesthetics, the application delivers a cinematic immersion into the career of the most dominant driver of modern Grand Prix racing.
 
-Every pixel is precision-crafted around Oracle Red Bull Racing's livery: deep obsidian foundations (`#0A0E1A`), high-contrast carbon fibre surfaces (`#121829`), iconic Red Bull crimson (`#DB0A40`), Dutch national orange (`#FF6A13`), and championship gold (`#FFC906`).
 
 ---
 
@@ -209,16 +189,6 @@ CREATE POLICY "Admins only read access"
 
 ---
 
-## 🚢 Deployment to Vercel
-
-1. Push your repository to GitHub.
-2. Go to [Vercel](https://vercel.com/) and click **"Add New Project"**.
-3. Select your repository `Max_Verstappen`.
-4. In the **Environment Variables** panel, add:
-   - `NEXT_PUBLIC_SUPABASE_URL`
-   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-   - `SUPABASE_SERVICE_ROLE_KEY`
-5. Click **Deploy**. Vercel will automatically build and distribute the app across global edge networks.
 
 ---
 
