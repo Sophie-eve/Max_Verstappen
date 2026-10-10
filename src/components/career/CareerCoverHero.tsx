@@ -45,14 +45,14 @@ export const CareerCoverHero: React.FC = () => {
                 <ShieldCheck className="w-3 h-3 text-[#DB0A40]" strokeWidth={2.2} />
                 <span>Wins</span>
               </div>
-              <div className="text-2xl sm:text-3xl font-display text-[#DB0A40]">63</div>
+              <div className="text-2xl sm:text-3xl font-display text-[#DB0A40]">72</div>
             </div>
             <div className="p-3 rounded-sm bg-[#0D1220] border border-white/5">
               <div className="flex items-center gap-1.5 text-[10px] font-mono uppercase text-[#FF6A13] mb-1">
                 <Sparkles className="w-3 h-3 text-[#FF6A13]" strokeWidth={2.2} />
                 <span>Podiums</span>
               </div>
-              <div className="text-2xl sm:text-3xl font-display text-[#FF6A13]">111</div>
+              <div className="text-2xl sm:text-3xl font-display text-[#FF6A13]">135</div>
             </div>
           </div>
         </div>

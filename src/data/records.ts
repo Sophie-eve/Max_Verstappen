@@ -84,9 +84,17 @@ export const RECORDS_AND_MILESTONES: RecordMilestone[] = [
     title: "Wins from 10 Different Grid Slots",
     metric: "10 Grid Slots",
     previousRecord: "9 (Fernando Alonso)",
-    year: "2016 - 2024",
+    year: "2016 - 2026",
     description: "Won Grands Prix starting from P1, P2, P3, P4, P6, P7, P9, P10, P14 (Spa '22), and P17 (Brazil '24).",
     category: "Racecraft",
+  },
+  {
+    title: "Most Formula 1 Sprint Victories",
+    metric: "14 Sprint Wins",
+    previousRecord: "Inaugural Record Holder",
+    year: "2021 - 2026",
+    description: "Undisputed king of the Sprint format with 14 victories, extending his all-time record with a wet-weather win at the Singapore GP on October 10, 2026.",
+    category: "All-Time Historic",
   },
   {
     title: "Most Podiums in a Season",

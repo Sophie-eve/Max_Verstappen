@@ -44,10 +44,10 @@ export const Footer: React.FC = () => {
               </span>
               <span className="flex items-center gap-1.5 px-2 py-1 bg-[#121829] rounded-sm border border-white/5">
                 <Flag className="w-3.5 h-3.5 text-[#DB0A40]" strokeWidth={2.2} />
-                <span className="text-white font-medium">63 GP Wins</span>
+                <span className="text-white font-medium">72 GP Wins</span>
               </span>
-              <span className="px-2 py-1 bg-[#121829] rounded-sm border border-white/5 text-[#FF6A13] font-semibold">
-                Car #1
+              <span className="flex items-center gap-1.5 px-2 py-1 bg-[#121829] rounded-sm border border-white/5">
+                <span className="text-[#FF6A13] font-bold">135 Podiums</span>
               </span>
             </div>
           </div>

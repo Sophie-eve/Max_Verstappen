@@ -24,6 +24,7 @@ export const StatCounter: React.FC<StatCounterProps> = ({
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
   const shouldReduceMotion = useReducedMotion();
+  const isDecimal = !Number.isInteger(value);
   const [count, setCount] = useState<number>(0);
 
   useEffect(() => {
@@ -43,7 +44,11 @@ export const StatCounter: React.FC<StatCounterProps> = ({
 
       // Ease out cubic
       const easeOut = 1 - Math.pow(1 - progress, 3);
-      setCount(Math.floor(easeOut * value));
+      if (isDecimal) {
+        setCount(Number((easeOut * value).toFixed(1)));
+      } else {
+        setCount(Math.floor(easeOut * value));
+      }
 
       if (progress < 1) {
         animationFrameId = requestAnimationFrame(updateCount);
@@ -57,7 +62,7 @@ export const StatCounter: React.FC<StatCounterProps> = ({
     return () => {
       if (animationFrameId) cancelAnimationFrame(animationFrameId);
     };
-  }, [isInView, value, duration, shouldReduceMotion]);
+  }, [isInView, value, duration, shouldReduceMotion, isDecimal]);
 
   return (
     <div ref={ref} className="h-full">
@@ -91,7 +96,7 @@ export const StatCounter: React.FC<StatCounterProps> = ({
                   : "text-[#F5F7FA]"
               }`}
             >
-              {count}
+              {isDecimal ? count.toFixed(1) : count.toLocaleString()}
             </span>
             {suffix && (
               <span className="text-2xl sm:text-3xl font-display text-[#FF6A13]">

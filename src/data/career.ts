@@ -119,4 +119,29 @@ export const CAREER_TIMELINE: TimelineEvent[] = [
     ],
     keyStat: "4x World Champion",
   },
+  {
+    year: "2025",
+    title: "Championship Duel Down to Abu Dhabi Wire (RB21)",
+    category: "Championship",
+    summary: "Fought an epic 24-round title battle against McLaren that went down to the final lap of the season finale at Abu Dhabi, scoring 8 wins and 15 podiums.",
+    details: [
+      "Claimed 8 Grand Prix victories, 8 pole positions, and 421 championship points",
+      "Celebrated landmark 70th career Formula One victory during the European summer leg",
+      "Finished runner-up by a razor-thin 2-point margin after an intense season-long fight"
+    ],
+    keyStat: "8 Wins / 421 Points (P2 by 2 pts)",
+  },
+  {
+    year: "2026",
+    title: "2026 Campaign & Singapore Sprint Masterclass",
+    category: "Record",
+    summary: "Spearheaded Red Bull's charge into the next technical era, capturing his 72nd career GP win in Bahrain and crowning his 14th Sprint victory at Singapore on October 10, 2026.",
+    details: [
+      "Converted Sprint Pole into a masterclass wet victory at the Singapore GP on October 10, 2026",
+      "Extended all-time Formula 1 Sprint victory record to 14 wins",
+      "Secured front-row P2 start for Sunday's Grand Prix and elevated career tally to 3,640.5 points",
+      "Surpassed 249 Grand Prix starts, 72 race wins, and 135 career podiums"
+    ],
+    keyStat: "14 Sprint Wins / 3,640.5 Career Pts",
+  },
 ];

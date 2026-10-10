@@ -85,7 +85,7 @@ const CHAMPIONSHIPS: ChampionshipSeason[] = [
     wins: 9,
     poles: 8,
     podiums: 14,
-    points: 429,
+    points: 437,
     clinchedAt: "Las Vegas GP (Las Vegas Strip Circuit)",
     definingMoment: "Miraculous rain drive from P17 to P1 at Interlagos, Brazil",
     narrative: "As McLaren, Ferrari, and Mercedes brought fierce upgrades and closed the car performance gap, Max's champion pedigree shone brighter than ever. When the car wasn't dominant, his racecraft was. His masterclass from 17th on the grid in biblical rain at Sao Paulo sealed his place alongside Prost, Vettel, and Fangio with his fourth consecutive world crown.",

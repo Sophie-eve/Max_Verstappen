@@ -93,7 +93,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     role: "Head of Race Engineering / Max's Race Engineer",
     callsign: "\"GP\"",
     quote: "\"Max, please use your head a bit more... Simply lovely, mate.\"",
-    bio: "The calm, authoritative voice in Max's radio earpiece since 2016. Their honest, brotherly banter and mutual tactical trust have formed the bedrock of 60+ Grand Prix victories.",
+    bio: "The calm, authoritative voice in Max's radio earpiece since 2016. Their honest, brotherly banter and mutual tactical trust have formed the bedrock of 70+ Grand Prix victories.",
   },
   {
     name: "Christian Horner CBE",

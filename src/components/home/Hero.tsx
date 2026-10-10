@@ -107,7 +107,7 @@ export const Hero: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-base sm:text-lg md:text-xl text-[#8F9CAE] max-w-2xl font-sans leading-relaxed mx-auto lg:mx-0"
             >
-              Four consecutive World Championships. 63 Grand Prix victories. The youngest race winner in Formula 1 history and the holder of the greatest single season ever witnessed.
+              Four consecutive World Championships. 72 Grand Prix victories. 135 podium finishes. The youngest race winner in Formula 1 history and winner of today&apos;s wet-weather Singapore GP Sprint.
             </motion.p>
 
             {/* CTAs */}
@@ -145,7 +145,7 @@ export const Hero: React.FC = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 0.4 }}
-              className="pt-6 border-t border-white/10 flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs font-mono text-[#8F9CAE]"
+              className="pt-6 border-t border-white/10 flex flex-wrap items-center justify-center lg:justify-start gap-3 text-xs font-mono text-[#8F9CAE]"
             >
               <div className="flex items-center gap-2.5 bg-[#121829]/90 px-3 py-1.5 rounded-sm border border-white/10 hover:border-[#FFC906]/40 transition-colors shadow-sm">
                 <span className="p-1 rounded-sm bg-[#FFC906]/15 text-[#FFC906] flex items-center justify-center">
@@ -157,13 +157,17 @@ export const Hero: React.FC = () => {
                 <span className="p-1 rounded-sm bg-[#DB0A40]/15 text-[#DB0A40] flex items-center justify-center">
                   <ShieldCheck className="w-3.5 h-3.5" strokeWidth={2.2} />
                 </span>
-                <span className="text-white font-semibold">63 Grand Prix Wins</span>
+                <span className="text-white font-semibold">72 Grand Prix Wins</span>
               </div>
               <div className="flex items-center gap-2.5 bg-[#121829]/90 px-3 py-1.5 rounded-sm border border-white/10 hover:border-[#FF6A13]/40 transition-colors shadow-sm">
                 <span className="p-1 rounded-sm bg-[#FF6A13]/15 text-[#FF6A13] flex items-center justify-center">
                   <Sparkles className="w-3.5 h-3.5" strokeWidth={2.2} />
                 </span>
-                <span className="text-white font-semibold">111 F1 Podiums</span>
+                <span className="text-white font-semibold">135 F1 Podiums</span>
+              </div>
+              <div className="flex items-center gap-2 bg-[#DB0A40]/15 px-3 py-1.5 rounded-sm border border-[#DB0A40]/40 shadow-sm">
+                <span className="w-2 h-2 rounded-full bg-[#DB0A40] animate-ping" />
+                <span className="text-[#FFC906] font-bold">Today: P1 Singapore Sprint (+8 Pts)</span>
               </div>
             </motion.div>
           </div>

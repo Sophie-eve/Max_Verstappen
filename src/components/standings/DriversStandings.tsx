@@ -53,6 +53,9 @@ export const DriversStandings: React.FC = () => {
                   <Trophy className="w-3.5 h-3.5 text-[#FFC906]" strokeWidth={2.2} /> P1 WORLD CHAMPIONSHIP LEADER
                 </span>
                 <span className="text-xs font-mono text-[#FFC906]">2026 SEASON</span>
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-950/70 border border-emerald-500/40 text-emerald-400 font-bold">
+                  +8 PTS TODAY (SINGAPORE SPRINT P1)
+                </span>
               </div>
 
               <h3 className="text-3xl sm:text-5xl font-display uppercase tracking-tight text-white">
@@ -64,7 +67,7 @@ export const DriversStandings: React.FC = () => {
                   <ShieldCheck className="w-4 h-4 text-[#DB0A40]" strokeWidth={2.2} /> Oracle Red Bull Racing
                 </span>
                 <span>•</span>
-                <span>Championship Delta: <strong className="text-emerald-400">+54 PTS over P2</strong></span>
+                <span>Championship Delta: <strong className="text-emerald-400">+58 PTS over P2</strong></span>
                 <span>•</span>
                 <span>Nationality: <strong className="text-[#FF6A13]">Netherlands (NED)</strong></span>
               </div>
@@ -73,7 +76,7 @@ export const DriversStandings: React.FC = () => {
             {/* Quick Metrics */}
             <div className="flex items-center gap-4 sm:gap-6 border-t md:border-t-0 md:border-l border-white/10 pt-4 md:pt-0 md:pl-8">
               <div className="text-center">
-                <div className="text-3xl sm:text-4xl font-display text-white">412</div>
+                <div className="text-3xl sm:text-4xl font-display text-white">420</div>
                 <div className="text-[10px] font-mono uppercase text-[#8F9CAE]">Points</div>
               </div>
               <div className="text-center">
